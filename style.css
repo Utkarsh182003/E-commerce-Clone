@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    font-family: 'Tilt Neon', sans-serif;
+    border: border-box;
+    background-color: none;
+}
+.navbar_container{
+    background-color: #ffffff;
+    height: 90px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 55px;
+    padding-right: 50px;
+    border-top: 3px solid #2c4152;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
+    position: fixed; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    right: 0; /* Add this line */
+    z-index: 1000; /* Add this line */
+
+}
+.logo{
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.logo img{
+    height: 38px;
+    width: 130px;
+
+}
+.category{
+    display: flex;
+    margin-left: 100px;
+    align-items: flex-end;
+    padding: 5px;
+}
+.category ul{
+    align-items: flex-end;
+    font-size: 16px;
+}
+.search_upper{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+   
+}
+
+.search_upper ul{
+    font-size: 12px;
+
+    padding-left: 8px;
+
+    padding: 10px;
+   
+}
+
+.nav-search{
+    margin-top: 15px;
+    /* position: relative; */
+    justify-content: baseline;
+}
+.visit ul a{
+    color: rgb(255, 255, 255);
+    padding:5px;
+    border-radius: -10px;
+    background-color: black;
+}
+.nav-search i:first-child{
+    position: absolute;
+    top: 8px;
+    right: 115px;
+    padding: 1px;
+}
+.nav-search i{
+    margin: 10px;
+}
+.search-input{
+    width: 200px;
+    height: 30px;
+    border-radius: 17px;
+    padding: 0px 20px 0px 12px;
+
+}
+.icons i{
+    display: flexbox;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+
+.middle img{
+    width: 100%;
+}
+
+/* carousels */
+.mySlides{
+    transition: smooth;
+}
+
+#carousel1 {
+    margin-top: 90px;
+}
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+  
+.carousel-indicators button {
+    width: 50px;
+    height: 5px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.carousel-indicators button.active {
+    background-color: #e1e1e1;
+}
+  
+.carousel-indicators button.active::after {
+    width: 100%;
+    transition: width 2s linear;
+}
+  
+.carousel-indicators button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #636363;
+    transition: none;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+
+
+.container{
+    width: auto;
+}
+.banner{
+    margin-bottom: 0;
+}
+
+.container .banner img{
+    width: 100%;
+}
+.container .images_grid{
+    display: flex;
+}
+
+.images_grid img {
+    margin-top: -5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+  
+  
+/*footer*/
+.main_container{
+    height: auto;
+    background-color: #2c4152;
+}
+
+.panel_upper{
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: space-evenly; */
+    border-bottom: 1px solid white;
+    padding: 45px 0px;
+    margin: 0px 75px;
+} 
+.panel_upper ul{
+    padding-right: 100px;
+    padding-left: 0px;
+}
+.panel_upper ul a{
+    display: block;
+    font-size: 12px;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-top: 10px;
+    color: #bab7b7;
+}
+.panel_upper ul p{
+    font-size: 14px;
+    color: #bab7b7;
+    font-family: 'Lora', serif;
+    margin-bottom: 30px;
+    
+}
+
+.panel_lower{
+    margin: 0px 75px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.panel_lower ul{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    padding-left: 0px;
+    color: #bab7b7;
+}
+.panel_lower div img{
+    margin-top: 15px;
+    background-color: transparent;
+    margin-left: -8px;
+}
+    
+  
+/* For tablets */
+@media (max-width: 768px) {
+    .navbar_container {
+      flex-direction: column;
+    }
+    .category {
+      font-size: 14px;
+      margin-left: 50px;
+    }
+    .search-input {
+      width: 200px;
+      height: 25px;
+    }
+    .mySlides, .banner img, .images_grid img {
+      width: 100%;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    .navbar_container {
+      flex-direction: column;
+    }
+    .category {
+      font-size: 12px;
+      margin-left: 20px;
+    }
+    .search-input {
+      width: 150px;
+      height: 20px;
+    }
+    .mySlides, .banner img, .images_grid img {
+      width: 100%;
+    }
+  }
