@@ -1,2 +1,2 @@
 # E-commerce-Clone
-E-commerce website clone
+Tried to copy the UI of the original Ajio Website
